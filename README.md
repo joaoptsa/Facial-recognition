@@ -35,6 +35,6 @@
 
   <h4>Turn on your webcam and run the script</h4>
                   
-    python detectVideo.py  
+    python FacialRecognition1.py  
   
     
