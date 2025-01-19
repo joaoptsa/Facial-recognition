@@ -22,6 +22,10 @@
   </p>
   <p> NumPy: For mathematical calculations and manipulating arrays.</p>
    
-    
+   <h3>Install</h3> 
+   <p>The shape_predictor_68_face_landmarks is a pre-trained model provided by dlib that identifies facial landmarks (reference points on the face, such as eyes, nose, mouth, etc.).</p>
+                       
+    !wget -O shape_predictor_68_face_landmarks.dat.bz2 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+    !bzip2 -d shape_predictor_68_face_landmarks.dat.bz2
 
     
