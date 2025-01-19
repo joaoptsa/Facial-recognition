@@ -23,9 +23,18 @@
   <p> NumPy: For mathematical calculations and manipulating arrays.</p>
    
    <h3>Install</h3> 
-   <p>The shape_predictor_68_face_landmarks is a pre-trained model provided by dlib that identifies facial landmarks (reference points on the face, such as eyes, nose, mouth, etc.).</p>
+   <p3>The shape_predictor_68_face_landmarks is a pre-trained model provided by dlib that identifies facial landmarks (reference points on the face, such as eyes, nose, mouth, etc.).</p3>
                        
     !wget -O shape_predictor_68_face_landmarks.dat.bz2 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
     !bzip2 -d shape_predictor_68_face_landmarks.dat.bz2
+    
+    sudo apt update
+    sudo apt install libjpeg-dev libpng-dev
+    pip install faiss-cpu or pip install faiss-gpu-cu12 # CUDA 12.x, Python 3.8+
+    pip install opencv-python dlib torch torchvision numpy facenet_pytorch
 
+  <h4>Turn on your webcam and run the script</h4>
+                  
+    python detectVideo.py  
+  
     
