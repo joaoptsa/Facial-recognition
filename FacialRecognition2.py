@@ -139,7 +139,7 @@ def train_model(epochs=10, save_path="recognizer.pth"):
         accuracy = total_correct / total_samples * 100
         print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss:.4f}, Accuracy: {accuracy:.2f}%")
 
-    # Salvar o modelo treinado
+    # Save
     torch.save(recognizer.state_dict(), save_path)
     print(f"Model saved to {save_path}")
 
